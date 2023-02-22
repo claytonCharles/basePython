@@ -1,9 +1,9 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+from django.http import JsonResponse
 
 # Create your views here.
 
 def exemplo(request):
     msg = "<h1>Hello World!</h1>"
 
-    return HttpResponse(msg)
+    return JsonResponse(msg)
